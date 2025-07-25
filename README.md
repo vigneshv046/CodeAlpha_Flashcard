@@ -61,6 +61,11 @@ flashcard/
 ✅ Import / export flashcards
 
 ---
+## preview
+<img width="1919" height="1016" alt="image" src="https://github.com/user-attachments/assets/7deafe15-a2dc-4924-b092-c28a7ddc6c6e" />
+<img width="1912" height="1005" alt="image" src="https://github.com/user-attachments/assets/ec6e0699-9583-449c-af46-8dea7e55ed9f" />
+
+
 
 ## 🤝 Contributing
 
