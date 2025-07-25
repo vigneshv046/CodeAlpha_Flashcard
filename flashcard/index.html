@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flashcard Quiz</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body >
+    <video autoplay muted loop id="bg-video">
+    <source src="bac.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+ 
+  
+  <h1>Flashcard Quiz</h1>
+
+  <div class="select-box">
+    <label for="category" style="color:coral; font-weight: 800;">Choose Category:</label>
+    <select id="category" onchange="changeCategory(this.value)">
+      <option value="React">React</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+    </select>
+  </div>
+
+  <div class="flashcard" id="card">
+    <div class="question" id="question"></div>
+    <div id="options"></div>
+    <div class="buttons">
+      <button onclick="prevCard()">Previous</button>
+      <button onclick="nextCard()">Next</button>
+      <button class="edit-btn" onclick="loadEdit()">Edit</button>
+      <button class="delete-btn" onclick="deleteCard()">Delete</button>
+    </div>
+  </div>
+
+  <div class="form-box">
+    <h3 id="form-title" style="color:rgb(35, 214, 18); font-weight: 600; font-size:x-large;">Add New Flashcard</h3>
+    <select id="form-category">
+      <option value="React">React</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+    </select><br>
+    <input type="text" id="form-question" placeholder="Enter Question" /><br>
+    <input type="text" id="form-opt0" placeholder="Option 1" /><br>
+    <input type="text" id="form-opt1" placeholder="Option 2" /><br>
+    <input type="text" id="form-opt2" placeholder="Option 3" /><br>
+    <input type="text" id="form-opt3" placeholder="Option 4" /><br>
+    <input type="number" min="0" max="3" id="form-correct" placeholder="Correct Option (0-3)" /><br>
+    <button onclick="saveCard()">Save</button>
+  </div>
+ <script src="script.js"></script>
+</body>
+</html>

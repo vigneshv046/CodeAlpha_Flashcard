@@ -1,0 +1,96 @@
+ body {
+      font-family: Arial;
+      background: #f0f4f8;
+      text-align: center;
+      padding: 20px;
+     
+    }
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -2;
+      opacity: 90%;
+      pointer-events: none;
+    }
+
+
+
+    h1 {
+      color: #116edf;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: italic;
+      font-variant:small-caps;
+    }
+
+    .select-box, .form-box {
+      margin: 15px auto;
+      max-width: 600px;
+    }
+
+    .flashcard {
+      background: rgb(80, 80, 79);
+      border: 2px solid #90cdf4;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 600px;
+      margin: 10px auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .question {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .option {
+      background: #edf2f7;
+      margin: 8px auto;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      max-width: 400px;
+    }
+
+    .option.correct {
+      background-color: #c6f6d5;
+    }
+
+    .option.incorrect {
+      background-color: #fed7d7;
+    }
+
+    .buttons {
+      margin: 10px;
+    }
+
+    button {
+      padding: 8px 15px;
+      margin: 5px;
+      font-size: 14px;
+      border: none;
+      border-radius: 6px;
+      background-color: #3182ce;
+      color: white;
+      cursor: pointer;
+    }
+
+    select, input, textarea {
+      padding: 8px;
+      width: 90%;
+      margin: 5px auto;
+      font-size: 14px;
+      border-radius: 6px;
+    }
+
+    .edit-btn {
+      background-color: #f6ad55;
+    }
+
+    .delete-btn {
+      background-color: #e53e3e;
+    }
